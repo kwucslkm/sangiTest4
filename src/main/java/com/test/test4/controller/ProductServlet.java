@@ -18,6 +18,7 @@ public class ProductServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // 요청을 doProcess 메서드로 넘김.(get, post 요청을 모두 doProcess 메서드에서 처리하기 위해)
+    	System.out.println("넘어오나");
         try {
             doProcess(request, response);
         } catch (SQLException e) {
@@ -31,6 +32,7 @@ public class ProductServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // 요청을 doProcess 메서드로 넘김.(get, post 요청을 모두 doProcess 메서드에서 처리하기 위해)
+    	System.out.println("넘어오나");
         try {
             doProcess(request, response);
         } catch (SQLException e) {
